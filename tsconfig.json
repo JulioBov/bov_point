@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+      "target": "ES6",
+      "module": "commonjs",
+      "esModuleInterop": true,
+      "sourceMap": true,
+      "rootDir": "./src",
+      "outDir": "./dist",
+      "strict": true,
+      "baseUrl": ".",
+      "types": ["node"],
+      "paths": {
+        "*": ["node_modules/*", "src/types/*"]
+      }
+    },
+    "include": ["src/*.ts"],
+    "exclude": ["node_modules", "knexfile.ts"]
+}
