@@ -5,7 +5,7 @@ const knexConfig: Knex.Config = {
   client: 'pg',
   connection: {
     connectionString: enviroments.CONNECTION_PG,
-    // ssl: { rejectUnauthorized: false },
+    ssl: { rejectUnauthorized: false },
   },
   useNullAsDefault: true,
   pool: {

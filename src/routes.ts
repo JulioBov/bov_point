@@ -10,4 +10,12 @@ api.use('/v1', validateToken, projectsRoutes);
 api.use('/v1', validateToken, categoriesRoutes);
 api.use('/v1', validateToken, pointRoutes);
 
+api.get('/health', async (req, res) => {
+  try {
+    res.status(200).send({ message: 'OK' });
+  } catch (err) {
+    res.status(500).json({ message: 'Not OK' });
+  }
+});
+
 export default api;
